@@ -1,0 +1,257 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner, .taxi_banner, .yoyo_banner {
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.heroBanner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 60.63%),
+              linear-gradient(292.41deg, #FFB800 11.49%, #E43A8C 54.83%, #D375FF 100%);
+  background-blend-mode: soft-light, normal;
+
+  color: white;
+}
+
+.heroBanner h1 img {
+  margin: -5px 5px;
+}
+
+.heroBanner h1 span {
+  color: #6D1E56;
+}
+
+.hero_content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero_backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 60.63%),
+              linear-gradient(292.41deg, #FFB800 11.49%, #E43A8C 54.83%, #D375FF 100%);
+  background-blend-mode: soft-light, normal;
+
+}
+
+.heroBanner .devices {
+  position: absolute;
+  right: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  gap: 20px;
+  transform: translateX(50%) scaleY(0.5) rotate(45deg);
+  transform-origin: top center;
+  align-items: flex-start;
+}
+
+.heroBanner .column {
+  display: grid;
+  gap: 20px;
+  margin-top: -150px;
+  animation: column 8s linear infinite;
+}
+
+.heroBanner .column:first-child, .heroBanner .column:last-child {
+  animation: column-alternate 8s linear infinite;
+}
+
+@keyframes column {
+  0% {
+    transform: none;
+  }
+
+  100% {
+    transform: translateY(-360px);
+  }
+}
+
+@keyframes column-alternate {
+  0% {
+    transform: none;
+  }
+
+  100% {
+    transform: translateY(360px);
+  }
+}
+
+.heroBanner .column:first-child, .heroBanner .column:last-child {
+  margin-top: -340px;
+}
+
+.heroBanner .devices .device {
+  width: 190px;
+  height: 340px;
+  background: #f0f1f2;
+  border-radius: 10px 20px;
+  box-sizing: border-box;
+  padding: 10px 20px 20px 10px;
+  box-shadow: inset -10px -2.5px 15px rgba(55, 84, 170, 0.2),
+              inset -2.5px -2.5px 10px rgba(55, 84, 170, 0.2),
+              inset 10px 2.5px 15px rgba(255, 255, 255, 0.2),
+              inset 2.5px 2.5px 10px rgba(255, 255, 255, 0.2),
+              20px 20px 40px rgba(55, 84, 170, 0.2);
+}
+
+.heroBanner .devices .device .screen {
+  width: 100%;
+  height: 100%;
+  /* background: #dcdfe2; */
+  border-radius: 2px;
+}
+
+.taxi_banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), linear-gradient(284.04deg, #00FFB8 0%, #3A88E4 48.96%, #75ACFF 100%);
+  background-blend-mode: soft-light, normal;
+}
+
+.yoyo_banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), linear-gradient(284.04deg, #FFA800 0%, #E4A03A 48.96%, #FF7575 100%);
+  background-blend-mode: soft-light, normal;
+}
+
+.getStarted {
+  background-color: white;
+  color: #D02DB4 !important;
+  width: 200px;
+  transition: .4s cubic-bezier(0.25, 0.25, 0, 1) transform,
+              .4s cubic-bezier(0.25, 0.25, 0, 1) box-shadow;
+}
+
+.getStarted:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 16px #69245e;
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner, .taxi_banner, .yoyo_banner {
+    padding: 2rem;
+  }
+}
+
+.taxi_banner, .yoyo_banner {
+  color: white;
+}
+
+.taxi_banner :global(.row), .yoyo_banner :global(.row) {
+  align-items: center;
+  margin-bottom: calc(0px - var(--ifm-paragraph-margin-bottom));
+}
+
+.taxi_banner h2, .yoyo_banner h2 {
+  font-size: 2.25rem;
+}
+
+.taxi_banner p, .yoyo_banner p {
+  font-size: 125%;
+}
+
+.taxi_banner p a, .yoyo_banner p a {
+  font-size: 100%;
+  color: white;
+  opacity: 0.5;
+}
+
+.taxi_banner a img, .yoyo_banner a img {
+  margin-left: 5px;
+}
+
+.taxi_banner h2 span {
+  color: #284A7B;
+}
+
+.yoyo_banner h2 span {
+  color: #693E04;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureImage {
+  height: 200px;
+  width: 200px;
+}
+
+.hero_skew_safe_area {
+  height: 2.5vw;
+  width: 100vw;
+}
+
+.hero_skew {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 5vw;
+}
+
+.hero_skew__north {
+  top: 0;
+  border-right-width: 100vw;
+  border-right-color: transparent;
+  border-right-style: solid;
+  border-top: 5vw;
+  border-top-color: white;
+  border-top-style: solid;
+}
+
+.hero_skew__south {
+  bottom: 0;
+  border-left-width: 100vw;
+  border-left-color: transparent;
+  border-left-style: solid;
+  border-bottom: 5vw;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+}
+
+html[data-theme='dark'] .hero_skew__south {
+  border-bottom-color: #18191a;
+}
+
+html[data-theme='dark'] .hero_skew__north {
+  border-top-color: #18191a;
+}
+
+.taxi_banner p.code, .yoyo_banner p.code {
+  font-size: medium;
+}
+
+.feature .icon {
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.1))
+          drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+  margin-bottom: var(--ifm-paragraph-margin-bottom);
+}
+
+.feature h3, .feature p {
+  text-align: center;
+}
+
+@media screen and (min-width: 997px) {
+  .feature__0 {
+    margin-top: min(2.5vw, 0.025 * var(--ifm-container-width));
+  }
+
+  .feature__1 {
+    margin-top: 0vw;
+  }
+
+  .feature__2 {
+    margin-top: max(-2.5vw, -0.025 * var(--ifm-container-width));
+  }
+}
