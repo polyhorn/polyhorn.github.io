@@ -67,3 +67,15 @@
   fill: black;
   stroke: black;
 }
+
+.admonition .tabs__item {
+  color: rgb(96, 103, 112);
+}
+
+.admonition .tabs__item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.admonition .tabs__item--active {
+  color: var(--ifm-color-primary);
+}

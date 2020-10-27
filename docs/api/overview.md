@@ -7,10 +7,10 @@ slug: /
 
 | Name | Description |
 |:-----|:------------|
+| [Asset](/api/asset/) | Static-typed asset in the `assets/` folder of your project. |
 | [Color](/api/color/) | Point in a color space. |
 | [Font](/api/font/) | Typesetting information. |
 | [ImageSource](/api/image-source/) | Virtual image data. |
-| [Style](/api/style/) | Specification of the layout and appearance of an element. |
 
 ## Roadmap
 

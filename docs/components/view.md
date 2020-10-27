@@ -30,5 +30,5 @@ some thoughts.
    view is pressed.
 2. It might be worthwhile to consider merging the functionality of either
    [KeyboardAvoidingView](/components/keyboard-avoiding-view/) and/or
-   [ScrollView](/components/scroll-view/) with this component.
+   [ScrollView](/components/scrollable/) with this component.
 :::

@@ -1,7 +1,7 @@
 ---
-id: "scroll-view"
-title: ScrollView
-sidebar_label: ScrollView
+id: "scrollable"
+title: Scrollable
+sidebar_label: Scrollable
 hide_title: true
 ---
 
@@ -16,7 +16,7 @@ pub enum ScrollViewIndicatorStyle {
     White,
 }
 
-pub struct ScrollView {
+pub struct Scrollable {
     pub style: Style,
     pub content_insets: Insets<f32>,
     pub indicator_style: ScrollViewIndicatorStyle,
@@ -42,7 +42,7 @@ some thoughts.
    consider doing this too. However, it's not clear what the fallback should be.
 4. There are many properties still missing: `always_bounce`,
    `deceleration_rate`, etc.
-5. It might be worthwhile to briefly consider if we can merge `ScrollView` and
+5. It might be worthwhile to briefly consider if we can merge `Scrollable` and
    `View`, i.e. to make it a property (just like css):
    ```rust
    poly!(<View style={ style! { overflow: scroll; } } />)

@@ -8,10 +8,16 @@ module.exports = {
   organizationName: 'polyhorn', // Usually your GitHub org/user name.
   projectName: 'polyhorn.github.io', // Usually your repo name.
   themeConfig: {
+    announcementBar: {
+      id: 'preview', // Any value that will identify this message.
+      content: '🚧 Polyhorn is still very much a work-in-progress! 🚧',
+      backgroundColor: '#ffffff', // Defaults to `#fff`.
+      textColor: '#091E42', // Defaults to `#000`.
+      isCloseable: false, // Defaults to `true`.
+    },
     prism: {
-      additionalLanguages: ['rust'],
-      // theme: require('prism-react-renderer/themes/github'),
-      theme: require('prism-react-renderer/themes/palenight'),
+      additionalLanguages: ['scss', 'rust', 'toml'],
+      theme: require('prism-react-renderer/themes/nightOwl'),
     },
     navbar: {
       title: 'Polyhorn',
@@ -160,6 +166,7 @@ module.exports = {
         editUrl:
           'https://github.com/polyhorn/polyhorn.github.io/edit/master/',
       }
-    ]
+    ],
+    './docusaurus-fonts'
   ]
 };

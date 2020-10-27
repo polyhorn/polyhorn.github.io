@@ -2,10 +2,17 @@ module.exports = {
     apiSidebar: {
         APIs: [
             'overview',
+            'asset',
             'color',
             'font',
             'image-source',
-            'style',
+            'transforms',
+        ],
+        Style: [
+            'style/image-style',
+            'style/scrollable-style',
+            'style/text-style',
+            'style/view-style'
         ]
     }
 };

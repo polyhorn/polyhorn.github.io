@@ -18,7 +18,7 @@ use polyhorn::*;
 | [Image](/components/image/) | Renders an [ImageSource](/api/image-source/). |
 | [KeyboardAvoidingView](/components/keyboard-avoiding-view/) | Automatically adjusts its position, size or padding when the system keyboard appears. |
 | [Modal](/components/modal/) | Renders a view in a system-provided modal window. |
-| [ScrollView](/components/scroll-view/) | Implements scrolling gestures to facilitate layouts that exceed screen sizes. |
+| [Scrollable](/components/scrollable/) | Implements scrolling gestures to facilitate layouts that exceed screen sizes. |
 | [StatusBar](/components/status-bar/) | Controls the system status bar on iOS and Android. |
 | [Text](/components/text/) | Renders (rich) text. |
 | [TextInput](/components/text-input/) | Accepts user input. |

@@ -150,7 +150,7 @@ pub enum Routes {
 
 impl Component for App {
     fn render(&self, _manager: &mut Manager) -> Element {
-        poly!(<tab::Navigator::<Routes> ... />)
+        poly!(<tab::Navigator::<Routes> />)
     }
 }`}
                   </CodeBlock>
@@ -222,7 +222,7 @@ impl Component for App {
       // Only animate from \`:press\` to \`:initial\`,
       // not vice-versa.
       &:from(:press) {
-        transition_opacity: ease_in_out(0.4);
+        transition-opacity: ease-in-out(0.4);
       }
     }
 
@@ -233,7 +233,7 @@ impl Component for App {
 
 impl Component for TouchableOpacity {
     fn render(&self, _manager: &mut Manager) -> Element {
-        poly!(<View::<States> ... />)
+        poly!(<View::<States> />)
     }
 }`}
                   </CodeBlock>

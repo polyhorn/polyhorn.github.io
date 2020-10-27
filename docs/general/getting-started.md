@@ -54,33 +54,30 @@ hello-world/
 This is the content of `src/lib.rs`:
 
 ```rust
-use polyhorn::*;
+```rust
+use polyhorn::prelude::*;
 
-pub struct HelloWorld;
+#[derive(Default)]
+pub struct App {}
 
-impl Component for HelloWorld {
-    fn render(self, manager: &Manager) -> Element {
-        poly!(
-            <Window title="Window" style={ style! {
-                display: flex(),
-                align_items: center(),
-                justify_content: center(),
-            } }>
-                <Text>
-                    "Hello World!"
+impl Component for App {
+    fn render(&self, _manager: &mut Manager) -> Element {
+        poly!(<Window>
+            <View style=!{
+                align-items: center;
+                justify-content: center;
+                background-color: red;
+                height: 100%;
+            }>
+                <Text style=!{ color: white; }>
+                    "Welcome to your Polyhorn app!"
                 </Text>
-            </Window>
-        )
+            </View>
+        </Window>)
     }
 }
 
-#[polyhorn::main]
-pub fn main() -> Option<Instance> {
-    render(
-        poly!(<HelloWorld />),
-        &mut Container::root()
-    )
-}
+polyhorn::render!(<App />);
 ```
 
 ## Run a Project

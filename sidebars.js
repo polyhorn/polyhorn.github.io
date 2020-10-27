@@ -4,5 +4,6 @@ module.exports = {
     Concepts: ['concepts/introduction', 'concepts/components', 'concepts/elements', 'concepts/instances'],
     Hooks: ['hooks/introduction', 'hooks/state-hooks', 'hooks/effect-hooks', 'hooks/reference-hooks', 'hooks/context-hooks'],
     Platforms: ['platforms/android', 'platforms/ios'],
+    Workflow: ['workflow/overview', 'workflow/editors', 'workflow/ci']
   }
 };

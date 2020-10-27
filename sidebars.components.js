@@ -5,7 +5,7 @@ module.exports = {
             'image',
             'keyboard-avoiding-view',
             'modal',
-            'scroll-view',
+            'scrollable',
             'status-bar',
             'text',
             'text-input',
